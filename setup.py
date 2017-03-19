@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
-README = 'use mako templating in your YAML files'
+README = 'linux network helpers - e.g. list interfaces and their IP addresses'
 
 requires = []
 
 setup(name='linux-nethelp',
-      version='0.1.1',
+      version='0.1.2',
       description=README,
       long_description=README,
       url='https://github.com/haarcuba/linux-nethelp',
