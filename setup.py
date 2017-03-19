@@ -5,7 +5,7 @@ README = 'use mako templating in your YAML files'
 requires = []
 
 setup(name='linux-nethelp',
-      version='0.1.0',
+      version='0.1.1',
       description=README,
       long_description=README,
       url='https://github.com/haarcuba/linux-nethelp',
