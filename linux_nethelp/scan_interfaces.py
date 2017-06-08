@@ -7,8 +7,8 @@ _IP = re.compile( 'inet (?P<ip>\d+\.\d+\.\d+.\d+)/(?P<mask>\d+)' )
 class ScanInterfaces( object ):
     def __init__( self ):
         self._interfaces = []
-        output = subprocess.check_output( [ 'ip', '-f', 'inet', 'addr' ] )
-        lines = output.split( '\n' )
+        ipProcess = subprocess.run( [ 'ip', '-f', 'inet', 'addr' ], universal_newlines = True, stdout = subprocess.PIPE )
+        lines = ipProcess.stdout.split( '\n' )
         for line in lines:
             self._process( line )
 
