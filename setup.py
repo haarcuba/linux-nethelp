@@ -5,7 +5,7 @@ README = 'linux network helpers - e.g. list interfaces and their IP addresses'
 requires = []
 
 setup(name='linux-nethelp',
-      version='1.0.0',
+      version='1.0.1',
       description=README,
       long_description=README,
       url='https://github.com/haarcuba/linux-nethelp',
